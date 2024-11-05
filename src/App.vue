@@ -30,7 +30,7 @@ export default {
     this.fetchPokemonList();
   },
   methods: {
-     // Función para obtener la lista de Pokémon de la API
+    // Función para obtener la lista de Pokémon de la API
     async fetchPokemonList() {
       try {
         // Realiza una petición a la API de Pokémon para obtener los primeros 20 Pokémon
@@ -67,6 +67,7 @@ export default {
   margin: 0 auto;
   max-width: 200px;
 }
+
 h1 {
   font-size: 40px;
   color: #007bff;
@@ -77,7 +78,6 @@ h1 {
   text-align: center;
 }
 
-/* Pokemon List */
 .pokemon-list {
   display: flex;
   flex-wrap: wrap;
