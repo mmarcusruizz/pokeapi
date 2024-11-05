@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img src="./assets/plogo.svg" alt="Imagen Pokémon" class="pokemon-logo">
     <h1>¿Quién es ese Pokémon?</h1>
     <ul>
       <!-- Itera sobre la lista de Pokémon y renderiza un componente PokemonView para cada uno -->
@@ -7,7 +8,7 @@
         <PokemonView :pokemon="pokemon" @discovered="incrementScore" />
       </li>
     </ul>
-    <p>Score: {{ score }}</p>
+    <p>Pokemones descubiertos: {{ score }}</p>
   </div>
 </template>
 
@@ -61,6 +62,11 @@ export default {
 </script>
 
 <style>
+.pokemon-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
 h1 {
   font-size: 40px;
   color: #007bff;
